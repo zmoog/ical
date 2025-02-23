@@ -1,2 +1,3 @@
 # ical
-Opinionated ical CLI tool
+
+Opinionated ICS / ICal CLI tool
