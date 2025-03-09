@@ -48,8 +48,8 @@ func (r Result) Table() string {
 		}
 
 		table = append(table, []string{
-			start.Format("2006-01-02 15:04"),
-			end.Format("2006-01-02 15:04"),
+			start.In(time.Local).Format("2006-01-02 15:04"),
+			end.In(time.Local).Format("2006-01-02 15:04"),
 			event.GetProperty(ics.ComponentPropertySummary).Value,
 		})
 	}

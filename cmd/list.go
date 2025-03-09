@@ -27,9 +27,6 @@ var listCmd = &cobra.Command{
 		return nil
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Println("list called")
-		fmt.Println(url)
-
 		resp, err := http.Get(url)
 		if err != nil {
 			return err
